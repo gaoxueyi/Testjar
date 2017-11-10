@@ -65,7 +65,16 @@
 		</dependencies>
 	</dependencyManagement>
 
-	<build>
+	<build>		
+		<filters>
+            		<filter>src/main/java/application.properties</filter>
+        	</filters>
+        	<resources>
+            		<resource>
+                		<directory>src/main/java</directory>
+                		<filtering>true</filtering>
+            		</resource>
+        	</resources>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
